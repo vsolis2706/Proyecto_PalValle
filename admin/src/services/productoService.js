@@ -1,6 +1,6 @@
 import axios from "axios"
 
-const URL = `${process.env.REACT_APP_URL_API}/Producto`
+const URL = `${process.env.REACT_APP_URL_PRODUCTOS}/Producto`
 
 const obtenerProducto = async () => {
     try {
