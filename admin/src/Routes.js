@@ -1,6 +1,6 @@
 import React from 'react'
 import {Route} from "react-router-dom"
-import ListaProductos from "./views/ListaProductos"
+
 import ListarCategoria from "./views/ListarCategoria"
 import ListaClientes from "./views/ListaClientes"
 import Home from "./views/Home"
@@ -9,7 +9,8 @@ import CrearProducto from "./views/CrearProducto"
 import EditarProducto from "./views/EditarProducto"
 import CrearCategoria from "./views/CrearCategoria"
 import EditarCategoria from "./views/EditarCategoria"
-
+import ListaProductos from "./views/ListaProductos"
+//ok
 function Routes() {
     return (
         <div>
