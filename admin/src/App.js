@@ -1,16 +1,22 @@
 import React from 'react'
 import Routes from "./Routes"
 import {BrowserRouter as Router, Switch} from "react-router-dom"
-
+ import Layout from "./components/Layout"
+import NavigationBar from "./components/NavegationBar" 
 function App () {
 return(
-  <Router>
-    <div className="container-lg p-5">
+  <>
+    <NavigationBar/> 
+   <Layout> 
+
+    <Router>
       <Switch>
         <Routes/>
       </Switch>
-    </div>
-  </Router>
+    </Router>
+    </Layout> 
+
+    </>
   )
 } 
 

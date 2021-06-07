@@ -1,19 +1,48 @@
-import React from 'react'
+import React from "react";
 
-function FormCategoria(value, setValue, manejarSubmit) {
-    return (
-        <div>
-            <form onSubmit={(e)=>{manejarSubmit(e)}}>
-                <div>
-                    <label>Nombre de la Categoria</label>
-                    <input type="text" className="form-control" value={value} onChange={(e)=>(e.target.value)}/>
-                </div>
-                <div>
-                    <button className="btn btn-primary btn-lg">Guardar</button>
-                </div>
-            </form>
+function FormCategoria({
+  value, 
+  actualizarInput,
+  setValue, 
+  manejarSubmit}) {
+  return (
+     
+    <div>
+      <form onSubmit={(e) => {manejarSubmit(e)}}>
+        <div className="mb-3">
+          <label className="form-label">
+            Nombre 
+          </label>
+          <input 
+            type="text" 
+            className="form-control" 
+            name = "nombre"
+            value={value.nombre}
+            onChange={(e)=>{actualizarInput(e)}}
+          />
         </div>
-    )
+        
+        <div className="mb-3">
+          <label className="form-label">
+            Descripción
+          </label>
+          <input 
+            type="text" 
+            className="form-control" 
+             name = "descripcion"
+            value={value.descripcion}
+            onChange={(e)=>{actualizarInput(e)}}
+          />
+        </div>
+
+        <div className="d-grid">
+          <button className="btn btn-primary btn-lg" type="submit">
+            Guardar
+          </button>
+        </div>
+      </form>
+    </div>
+  );
 }
 
-export default FormCategoria
+export default FormCategoria;
