@@ -1,15 +1,22 @@
 import React from 'react'
-import ListaProductos from "./views/ListaProductos"
-import CrearProducto from "./views/CrearProducto"
-import ListaClientes from "./views/ListaClientes"
-
+import Routes from "./Routes"
+import {BrowserRouter as Router, Switch} from "react-router-dom"
+ import Layout from "./components/Layout"
+import NavigationBar from "./components/NavigationBar" 
 function App () {
 return(
-  <div className="container-lg p-5">
-    <ListaProductos/>
-    <CrearProducto/>
-    <ListaClientes/>
-  </div>
+  <>
+    <NavigationBar/> 
+   <Layout> 
+
+    <Router>
+      <Switch>
+        <Routes/>
+      </Switch>
+    </Router>
+    </Layout> 
+
+    </>
   )
 } 
 

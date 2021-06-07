@@ -1,5 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import {obtenerProducto} from "../services/productoService"
+import {Link} from "react-router-dom"
+
 
 function ListaProductos() {
     const [productos, setProductos] = useState([])
@@ -16,8 +18,10 @@ function ListaProductos() {
         getProductos()
     }, [])
     return (
-        <div>
+        <div className="m-3">
             <h1>Productos</h1>
+            <Link className = "btn btn-primary btn-md  my-2"  to="/crearproducto">Crear Producto</Link>
+         
             <table className="table table-striped table-hover">
                 <thead>
                     <tr>
@@ -26,9 +30,6 @@ function ListaProductos() {
                         <th>Descripción</th>
                         <th>Precio</th>
                         <th>Stock</th>
-                        <th>Fecha de vencimiento</th>
-                        <th>Foto</th>
-                        <th>Categoria</th>
                         <th>Acciones</th>
                     </tr>
                 </thead>
@@ -40,12 +41,13 @@ function ListaProductos() {
                             <td>{prod.descripcion}</td>
                             <td>{prod.precio}</td>
                             <td>{prod.stock}</td>
-                            <td>{prod.fecha_vencimiento}</td>
-                            <td></td>
-                            <td>{prod.id_categoria}</td>
-                            <td></td>
-                            <td><button className="btn btn-warning btn-sm">Editar</button></td>
-                            <td><button className="btn btn-danger btn-sm">Eliminar</button></td>
+                            <td>
+                            <Link className="btn btn-warning btn-sm mr-2" to={`/editarproducto/${prod.id}`}>Editar</Link>
+                           
+                            <Link className="btn btn-danger btn-sm" to={`/eliminarproducto/${prod.id}`}>Eliminar</Link>
+                          
+                            </td>
+                            
                         </tr>
                     ))}
                 </tbody>
