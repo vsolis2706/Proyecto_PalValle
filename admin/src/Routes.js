@@ -14,7 +14,7 @@ import ListaProductos from "./views/ListaProductos"
 function Routes() {
     return (
         <div>
-         <Route exact path="/" component={Home}/>   
+         <Route exact path="/home" component={Home}/>   
          <Route exact path="/ListaProductos" component={ListaProductos}/> 
          <Route exact path="/crearproducto" component={CrearProducto}/>    
          <Route exact path="/editarproducto/:id" component={EditarProducto}/> 

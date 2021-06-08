@@ -53,3 +53,15 @@
     border-radius: 5px;
     margin-left: 10px;
 }
+
+.label-alert{
+    font-size: 14px;
+    color: red;
+    background: rgb(219, 187, 187);
+    width: fit-content;
+    height: fit-content;
+    padding: 5px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
