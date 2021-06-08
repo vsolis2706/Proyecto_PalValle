@@ -9,7 +9,7 @@ function NavigationBar() {
   <Navbar.Brand href="/">PallValle</Navbar.Brand>
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <Navbar.Collapse id="responsive-navbar-nav">
-    <Nav className="mr-auto">
+    <Nav className="mx-auto">
       <Nav.Link href="#features">Dashboard</Nav.Link>
   
       <NavDropdown title="Mantenimiento" id="collasible-nav-dropdown">
