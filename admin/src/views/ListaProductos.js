@@ -19,7 +19,8 @@ function ListaProductos() {
     }, [])
     return (
         <div className="m-3">
-            <h1>Productos</h1>
+           <h3 className ="mt-4 text-info">Listar Productos</h3>
+           <hr/>
             <Link className = "btn btn-primary btn-md  my-2"  to="/crearproducto">Crear Producto</Link>
          
             <table className="table table-striped table-hover">

@@ -21,9 +21,9 @@ const ListarCategoria = () => {
 
 
     return (
-        <div>
-      
-        <h1 className= "m-2">Categoría</h1>
+        <div>      
+         <h3 className ="mt-4 text-info">Listar Categoria</h3>
+           <hr/>
        
         <Link to="/crearcategoria" className="btn btn-primary btn-md my-2">
             Crear Categoria

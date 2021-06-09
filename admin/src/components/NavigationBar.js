@@ -6,7 +6,7 @@ function NavigationBar() {
         <>
 
   <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-  <Navbar.Brand href="/">PallValle</Navbar.Brand>
+  <Navbar.Brand href="/Home">PallValle</Navbar.Brand>
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <Navbar.Collapse id="responsive-navbar-nav">
     <Nav className="mr-auto">

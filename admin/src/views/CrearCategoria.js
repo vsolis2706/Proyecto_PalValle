@@ -45,7 +45,8 @@ function CrearCategoria() {
 
   return (
     <div>
-      <h1>Crear Categoria</h1>
+      <h3 className ="mt-4 text-info">Crear categoriasObtenidas</h3>
+           <hr/>
       <FormCategoria 
         value={value} 
         actualizarInput = {actualizarInput}
