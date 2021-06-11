@@ -1,5 +1,6 @@
 import React,{useState} from "react";
 import {Link} from "react-router-dom"
+import LogoPalValle from "../img/LogoPalValle.jpg"
 
 function Navbar() {
   const [collapsed, setCollapsed] = useState(true)
@@ -9,7 +10,7 @@ function Navbar() {
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <div className="container-fluid">
         <Link className="navbar-brand" to="PalValle">
-          <img src="./img/LogPalValle.png" alt="PalValle"/>
+          <img src={LogoPalValle} alt="PalValle"/>
         </Link>
         <button
           className="navbar-toggler"
