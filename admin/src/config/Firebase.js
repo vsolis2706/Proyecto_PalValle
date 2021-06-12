@@ -18,4 +18,4 @@ const config = {
         fire,
         storage,
         firebase
-  }
+  } 

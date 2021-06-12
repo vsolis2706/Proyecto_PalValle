@@ -6,7 +6,7 @@ import Productos from './components/Productos'
 
 function App() {
   return (
-    <div>
+    <div className="container">
       <Navbar/>
       <Productos/>
       {/* <Producto/> */}

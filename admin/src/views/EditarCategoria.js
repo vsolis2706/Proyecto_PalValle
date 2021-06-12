@@ -61,7 +61,8 @@ function EditarCategoria() {
 
     return (
     <div>
-     <h1>Editar Categoria</h1>
+     <h3 className ="mt-4 text-info">Editar Categoria</h3>
+           <hr/>
       <FormCategoria 
         value={value} 
         actualizarInput = {actualizarInput}

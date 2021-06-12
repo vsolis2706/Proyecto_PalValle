@@ -78,7 +78,8 @@ const getProducto = async() =>{
 
     return (
         <div>
-            <h1>Editar Producto</h1>
+            <h3 className ="mt-4 text-info">Editar Producto</h3>
+           <hr/>
             <FormProducto value ={value}
             setValue={setValue} 
             actualizarInput ={actualizarInput}

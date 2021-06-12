@@ -2,16 +2,17 @@ import React from 'react'
 import {Nav, NavDropdown, Navbar} from 'react-bootstrap'
 
 function NavigationBar() {
+  
     return (
         <>
 
   <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-  <Navbar.Brand href="/">PallValle</Navbar.Brand>
+  <Navbar.Brand href="/Home">PallValle</Navbar.Brand>
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <Navbar.Collapse id="responsive-navbar-nav">
-    <Nav className="mx-auto">
-      <Nav.Link href="#features">Dashboard</Nav.Link>
-  
+    <Nav className="mr-auto">
+      <Nav.Link href="/ListarVentas">Ventas</Nav.Link>
+      <Nav.Link href="#features">Reporte</Nav.Link>
       <NavDropdown title="Mantenimiento" id="collasible-nav-dropdown">
         <NavDropdown.Item href="/ListaProductos">Productos</NavDropdown.Item>
         <NavDropdown.Item href="/ListarCategoria">Categoria</NavDropdown.Item>

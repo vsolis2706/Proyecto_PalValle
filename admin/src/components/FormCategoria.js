@@ -36,7 +36,7 @@ function FormCategoria({
         </div>
 
         <div className="d-grid">
-          <button className="btn btn-primary btn-lg" type="submit">
+          <button className="btn btn-primary btn-md" type="submit">
             Guardar
           </button>
         </div>
