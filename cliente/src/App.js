@@ -1,21 +1,19 @@
 import React from 'react'
-import {Switch, BrowserRouter as Router, Link} from "react-router-dom"
-import Navbar from "./components/Navbar"
-import Login from "./components/Login/Login"
-import Carrusel from "./components/Carrusel"
-import Routes from "./Routes"
+import './App.css'
+import Producto from './components/Producto'
+import Navbar from './components/Navbar'
+import Productos from './components/Productos'
 
 function App() {
-
   return (
-    <Router>
+    <div>
       <Navbar/>
-      <Switch>
-        <Routes/>
-      </Switch>
-    </Router>
+      <Productos/>
+      {/* <Producto/> */}
+    </div>
   )
 }
 
 export default App
+
 
