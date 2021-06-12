@@ -10,9 +10,12 @@ function Navbar() {
       <div className="menu-bar">
     <nav className="navbar fixed-top navbar-expand-lg navbar-light p-md-3">
             <div className="container-fluid">
-                <Link className="nav-logo" to="/PalValle">
-                <img src="./img/LogopalValle.png" alt="PalValle"/>
-                </Link>
+           {/*      <Link className="nav-logo" to="/PalValle">
+                <img src={Logo} alt="PalValle" width="90" height="80"/>
+                </Link> */}
+            <a className="navbar-brand fw-bold text-white text tituloLogo" href="/PalValle">
+           <h1>PallValle</h1>  
+            </a>
                 <button
                 className="navbar-toggler"
                 type="button"
@@ -33,14 +36,14 @@ function Navbar() {
                     </Link>
                     </li>
                     <li className="nav-item">
-                    <a className="nav-link" href="#">
+                    <Link className="nav-link" to="/">
                         Categorias
-                    </a>
+                    </Link>
                     </li>
                     <li className="nav-item">
-                    <a className="nav-link" href="#">
-                        Ingresar
-                    </a>
+                    <Link className="nav-link" to="/">
+                        Categorias
+                    </Link>
                     </li>
                     <li className="nav-item">
                     <Link className="nav-link" to="/carrito">

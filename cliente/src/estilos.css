@@ -4,7 +4,7 @@
 .nav-link {
     font-size: 16px;
     margin: 3px;
-    color: white;
+    color: white !important;
     font-weight: 500;
 }
 .navbar-nav{
@@ -18,7 +18,7 @@
 }
 .nav-link:hover{
     font-weight: 600;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid white;
 }
 .navbar-brand img{
     width: 150px;
@@ -29,4 +29,47 @@
     .nav-link:hover{
         border-bottom: none!important;
     }
+}
+.head1{
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+  }
+
+  .contenedor{
+    height:400px;
+    display:grid;
+    grid-template-columns: repeat(4, minmax(100px,1fr));
+    grid-template-rows: repeat(2,minmax(100px,1fr));
+    gap:20px;
+  }
+  
+  .head2{
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+  }
+  
+  .head3{
+    grid-column: 4 / 5;
+    grid-row: 1 / 2;
+  }
+  
+  .head4{
+    grid-column: 3 / 5;
+    grid-row: 2 / 3;
+  }
+  .contenedor img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+  }
+  
+.carousel-item{
+    height:400px;
+    overflow: hidden;
+  }
+  
+.tituloLogo{
+
+    font-family: 'Lobster Two', cursive;
+    
 }

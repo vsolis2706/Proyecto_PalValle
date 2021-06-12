@@ -11,12 +11,19 @@ import CrearCategoria from "./views/CrearCategoria"
 import EditarCategoria from "./views/EditarCategoria"
 import ListaProductos from "./views/ListaProductos"
 import Login from "./components/Login"
+import ListarVentas from "./views/ListarVentas"
+ import VerVenta from "./views/VerVenta"
+
+
 //ok
 function Routes() {
     return (
         <div>
+ 
          <Route exact path="/Login" component={Login}/>   
-         <Route exact path="/Home" component={Home}/>   
+         <Route exact path="/Home" component={Home}/>  
+         <Route exact path="/detalleventa/:id" component={VerVenta}/>   
+         <Route exact path="/ListarVentas" component={ListarVentas}/> 
          <Route exact path="/ListaProductos" component={ListaProductos}/> 
          <Route exact path="/crearproducto" component={CrearProducto}/>    
          <Route exact path="/editarproducto/:id" component={EditarProducto}/> 
