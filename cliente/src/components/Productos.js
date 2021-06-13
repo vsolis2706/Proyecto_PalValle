@@ -2,6 +2,7 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Producto from '../components/Producto'
+import products from '../product-data'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -16,27 +17,15 @@ export default function Productos() {
   return (
     <div className={classes.root}>
       <Grid container spacing={3}>
-        <Grid item xs={12} sm={6} md={4} lg={3}>
-          <Producto/>
-        </Grid>
-        <Grid item xs={12} sm={6} md={4} lg={3}>
-        <Producto/>
-        </Grid>
-        <Grid item xs={12} sm={6} md={4} lg={3}>
-        <Producto/>
-        </Grid>
-        <Grid item xs={12} sm={6} md={4} lg={3}>
-        <Producto/>
-        </Grid>
-        <Grid item xs={12} sm={6} md={4} lg={3}>
-        <Producto/>
-        </Grid>
-        <Grid item xs={12} sm={6} md={4} lg={3}>
-        <Producto/>
-        </Grid>
-        <Grid item xs={12} sm={6} md={4} lg={3}>
-        <Producto/>
-        </Grid>
+
+        {
+          products.map(producto => (
+            <Grid item xs={12} sm={6} md={4} lg={3}>
+              <Producto key={producto.id} producto={producto}/>
+            </Grid>
+          ))
+        }
+
       </Grid>
     </div>
   );

@@ -35,7 +35,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function Producto() {
+export default function Producto({producto : {id, name, productType, price, rating, image, description}}) {
   const classes = useStyles();
   const [expanded, setExpanded] = React.useState(false);
 
@@ -48,27 +48,27 @@ export default function Producto() {
       <CardHeader
         action={
           <Typography className={classes.action} variant='h5' color='textSecondary'>
-            {accounting.formatMoney(19.99, "S/")}
+            {accounting.formatMoney(price, "S/")}
           </Typography>
         }
-        title="Cereales"
+        title={name}
         subheader="in stock"
       />
       <CardMedia
         className={classes.media}
-        image="https://www.sabervivirtv.com/medio/2019/01/15/avena_622f7f80_1200x710.jpg"
-        title="Cereales"
+        image={image}
+        title={name}
       />
       <CardContent>
         <Typography variant="body2" color="textSecondary" component="p">
-          Cereal Natural
+          {productType}
         </Typography>
       </CardContent>
       <CardActions disableSpacing>
         <IconButton aria-label="Add to Cart">
           <AddShoppingCart fontSize='large'/>
         </IconButton>
-        {Array(4).fill().map((_,i)=>(
+        {Array(rating).fill().map((_,i)=>(
           <p>&#11088;</p>
         ))}
         <IconButton
@@ -84,7 +84,7 @@ export default function Producto() {
       </CardActions>
       <Collapse in={expanded} timeout="auto" unmountOnExit>
         <CardContent>
-          <Typography paragraph>"Cereal bueno para la salud"</Typography>
+          <Typography paragraph>{description}</Typography>
         </CardContent>
       </Collapse>
     </Card>
