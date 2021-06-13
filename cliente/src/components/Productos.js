@@ -1,32 +1,40 @@
-import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import Grid from '@material-ui/core/Grid';
-import Producto from '../components/Producto'
-import products from '../product-data'
+import React from 'react'
+import {Link} from "react-router-dom"
 
-const useStyles = makeStyles((theme) => ({
-  root: {
-    flexGrow: 1,
-    padding: theme.spacing(3),
-  },
-}));
+function Productos({ productos, categoria, id_categoria }) {
+  console.log(id_categoria)
 
-export default function Productos() {
-  const classes = useStyles();
+  console.log(productos.fotos)
+    return (
+        <div className="container">
+      <div>
+        <h2 className="my-3 fw-bold">{categoria}</h2>
+      </div>
+      <div className="row">
+        {productos
+          .filter((prod) => {
+            return prod.id_categoria == id_categoria;
+          })
+        .map((prod, i) => (
 
-  return (
-    <div className={classes.root}>
-      <Grid container spacing={3}>
-
-        {
-          products.map(producto => (
-            <Grid item xs={12} sm={6} md={4} lg={3}>
-              <Producto key={producto.id} producto={producto}/>
-            </Grid>
-          ))
-        }
-
-      </Grid>
+          <div className="col-6 col-lg-3" key={i}>
+              <Link 
+                className="card mb-4" 
+                to={`/detalle/${prod.id}`} 
+                style={{textDecoration:'none', color:'black'}}
+              >
+                <img className="card-img-top" src={prod.fotos[0]} alt="" />
+                <div className="card-body">
+                  <h6 className="card-title">{prod.nombre}</h6>
+                  <span className="fw-bold">S/ {prod.precio}</span>
+                </div>
+              </Link>
+            </div>
+      
+        ))}
+      </div>
     </div>
-  );
+    )
 }
+
+export default Productos

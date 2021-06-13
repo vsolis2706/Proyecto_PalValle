@@ -1,7 +1,6 @@
-import {useState, useEffect, Fragment, useContext} from 'react'
+import {useState, useEffect} from 'react'
 import { useParams } from "react-router-dom"
 import { productoId } from "../services/productoService"
-import {useHistory} from "react-router-dom"
 
 
 function DetalleProducto() {

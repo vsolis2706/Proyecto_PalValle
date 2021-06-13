@@ -30,3 +30,92 @@
         border-bottom: none!important;
     }
 }
+* {
+    font-family: "Spartan", sans-serif;
+  }
+  header{
+      margin-top: 40px;
+      height: 550px;
+      overflow:hidden;
+  }
+  .bannerCarousel{
+    width:250px;
+    padding:15px;
+    background: white;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .bannerCarousel small{
+    font-weight: bold;
+    color:gray;
+  }
+  
+  .bannerCarousel h5{
+    font-weight: bold;
+    color:black;
+  }
+  /* Cartas de la categoria */
+  .cards{
+    text-align:center;/*centra texto aunque tbn img*/
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  /*Estilos de los c/card */
+  .card{
+    height:300px;
+    width:300px;
+    border-radius:5px;
+    margin:20px;
+  }
+  
+  /* Cartas superiores */
+  .card-imagen{
+    width:100%;
+    height:100%;/*dato vital importancia*/
+    /* para cortar el conteido que se sobrepasa */
+    overflow:hidden;
+    /* relative es una referencia */
+    position:relative;
+  }
+  
+  .card-imagen > img{
+    width:100%;
+    /* !! moviendo img 60px para arriba*/
+    transform:translate(0, -60px); /*dato vital importancia*/
+  }
+  /* inferior */
+  .card-info{
+    height:0%; /*dato vital importancia*/
+    visibility: hidden;
+    align-items: center;
+    text-align: center;
+  }
+  /* AQUÍ VA A COMENZAR LA MAGIA */
+  /* cuando ponga el mouse encima de card, modificare la parte superior */
+  .card:hover .card-imagen{
+    visibility: visible;
+    height:0%
+  }
+  /* cuando ponga el mouse encima de card, modificare el img que esta como primer hijo de card-imagen */
+  .card:hover .card-imagen > img{
+    /* brigthness me permite modificar el brillo de una imagen con un valor de 0 a 1 */
+    visibility: visible;
+    filter:brightness(0.7);
+  }
+  
+  .card:hover .card-info{
+    align-items: center;
+    transition: 0.3s ease;
+    visibility: visible;
+    height:100%;
+  }
+  .card:hover{
+    /* box-shadow: desplazamientoX desplazamientoY difuminado color */
+    transition:0.3s ease;
+    transform:scale(1.05);
+  }
+  .card .card-imagen{
+    transition: 0.4s ease;
+  }
