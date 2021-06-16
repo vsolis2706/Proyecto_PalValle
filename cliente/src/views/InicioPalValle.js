@@ -3,6 +3,7 @@ import {obtenerProductos} from "../services/productoService"
 import Productos from '../components/Productos'
 import Header from "../components/Header"
 import Cards from '../components/Cards'
+import CategoriesCarousel from '../components/CategoriesCarousel'
 
 
 function InicioPalValle() {
@@ -24,7 +25,8 @@ function InicioPalValle() {
          <div classNameName="mt-5">
             <h1 classNameName="text-center fw-bold">CATEGORÍAS</h1>
          </div>
-         <Cards/>
+         {/* <Cards/> */}
+          <CategoriesCarousel/>
         <div classNameName="row">
             <div classNameName="col-md-6 mb-3">
         <br/>
