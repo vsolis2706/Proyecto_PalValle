@@ -101,6 +101,21 @@ function Compra() {
             </div>
 
             <div className="mb-2">
+              <label className="form-label">DNI</label>
+              <input
+                type="text"
+                className="form-control"
+                placeholder="01234567"
+                {...register("dni", { minLength: 8 })}
+              />
+              {errors.numero && (
+                <span className="text-danger">
+                  Min 8 dígitos
+                </span>
+              )}
+            </div>
+
+            <div className="mb-2">
               <label className="form-label">Ciudad</label>
               <input
                 type="text"

@@ -23,10 +23,14 @@ function InicioPalValle() {
         <div>
          <Header />
          <div classNameName="mt-5">
-            <h1 classNameName="text-center fw-bold">CATEGORÍAS</h1>
+            <h1 classNameName="text-center fw-bold">Los más vendidos</h1>
          </div>
          {/* <Cards/> */}
           <CategoriesCarousel/>
+          <br/>
+          <div classNameName="mt-5">
+            <h1 classNameName="text-center fw-bold">CATEGORÍAS</h1>
+         </div>
         <div classNameName="row">
             <div classNameName="col-md-6 mb-3">
         <br/>
