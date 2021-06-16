@@ -11,7 +11,7 @@ function CarritoDeCompra() {
       <div className="my-4 text-center">
         <h1 className="fw-bold">
           <i className="fas fa-shopping-bag me-3"></i>
-          Carrito de Compras
+          Mis Productos Seleccionados
         </h1>
       </div>
       <table className="table">

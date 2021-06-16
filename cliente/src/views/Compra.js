@@ -1,8 +1,7 @@
 import React, {useState, useContext } from "react";
 import { CarritoContext } from "../context/carritoContext";
 import { useForm } from "react-hook-form";
-import { MapContainer, TileLayer , Marker, Popup, useMapEvents} from "react-leaflet";
-import L from "leaflet"
+import {useMapEvents} from "react-leaflet";
 
 function Compra() {
   const { carrito } = useContext(CarritoContext);
@@ -27,12 +26,6 @@ function Compra() {
     });
     return null;
   }
-
-  // Estamos utilizando la clase L de leaflet para instanciar un nuevo icono
-  const customIcon = new L.icon({
-    iconUrl:"https://image.flaticon.com/icons/png/512/1483/1483336.png",
-    iconSize: [50, 50]
-  })
 
   return (
     <div className="container mt-4">
@@ -78,6 +71,21 @@ function Compra() {
             </div>
 
             <div className="mb-2">
+              <label className="form-label">Correo electrónico</label>
+              <input
+                type="email"
+                className="form-control"
+                placeholder="example@example.com"
+                {...register("email", { required: true })}
+              />
+              {errors.email && (
+                <span className="text-danger">
+                  Este campo es obligatorio
+                </span>
+              )}
+            </div>
+
+            <div className="mb-2">
               <label className="form-label">Número de Celular</label>
               <input
                 type="text"
@@ -97,7 +105,7 @@ function Compra() {
               <input
                 type="text"
                 className="form-control"
-                placeholder="Ej. Arequipa"
+                placeholder="Ej. Lima"
                 {...register("ciudad", { pattern: /^[A-Za-z]/i })}
               />
               {errors.ciudad && (

@@ -15,8 +15,9 @@ function Navbar() {
            {/*      <Link className="nav-logo" to="/PalValle">
                 <img src={Logo} alt="PalValle" width="90" height="80"/>
                 </Link> */}
-            <Link className="navbar-brand" to="/PalValle">
-           <img src={Logo} alt="PalValle"/>
+            <Link className="navbar-brand text-white fw-bold" to="/PalValle">
+           {/* <img src={Logo} alt="PalValle"/> */}
+           <h3>PalValle</h3>
             </Link>
                 <button
                 className="navbar-toggler"
