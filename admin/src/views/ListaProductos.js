@@ -19,7 +19,7 @@ function ListaProductos() {
     }, [])
     return (
         <div className="m-3">
-           <h3 className ="mt-4 text-info">Listar Productos</h3>
+           <h3 className ="mt-4 font-weight-bold text-success">Listar Productos</h3>
            <hr/>
             <Link className = "btn btn-primary btn-md  my-2"  to="/crearproducto">Crear Producto</Link>
          
@@ -31,7 +31,7 @@ function ListaProductos() {
                         <th>Descripción</th>
                         <th>Precio</th>
                         <th>Stock</th>
-                        <th>Acciones</th>
+                        <th colSpan="2" className="text-center">Acciones</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -43,12 +43,12 @@ function ListaProductos() {
                             <td>{prod.precio}</td>
                             <td>{prod.stock}</td>
                             <td>
-                            <Link className="btn btn-warning btn-sm mr-2" to={`/editarproducto/${prod.id}`}>Editar</Link>
-                           
-                            <Link className="btn btn-danger btn-sm" to={`/eliminarproducto/${prod.id}`}>Eliminar</Link>
-                          
+                            <Link  className="btn btn-warning btn-sm" to={`/editarproducto/${prod.id}`}><i class="fas fa-edit"></i></Link>
                             </td>
-                            
+                            <td>
+                            <Link className="btn btn-danger btn-sm" to={`/eliminarproducto/${prod.id}`}><i class="fas fa-trash-alt"></i></Link>
+
+                            </td>
                         </tr>
                     ))}
                 </tbody>

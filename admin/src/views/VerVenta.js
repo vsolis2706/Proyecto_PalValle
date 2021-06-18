@@ -80,7 +80,7 @@ function VerVenta() {
 
     return (
         <div className="mb-3">
-             <h3 className ="mt-4 text-info">Información Venta</h3>
+             <h3 className ="mt-4 font-weight-bold text-success">Información Venta</h3>
            <hr/>
             <FormVenta
                 value={value}
@@ -88,7 +88,7 @@ function VerVenta() {
                 actualizarInput = {actualizarInput}
                 cliente={cliente}
             />
-            <h3 className ="mt-4 text-info">Detalle Venta</h3>
+            <h3 className ="mt-4 font-weight-bold text-success">Detalle Venta</h3>
            <FormDetalleVenta
                detalle ={detalle}
               

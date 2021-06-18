@@ -18,7 +18,7 @@ function ListaClientes() {
     }, [])
     return (
         <div className="mb-3">
-           <h3 className ="mt-4 text-info">Listar Clientes</h3>
+           <h3 className ="mt-4 font-weight-bold text-success">Listar Cliente</h3>
            <hr/>
            <Link to='/crearCliente' className="btn btn-primary btn-md my-2">
            Crear Cliente
@@ -46,12 +46,13 @@ function ListaClientes() {
               <td>{cli.telefono}</td>
               <td>
              
-                    <Link className="btn btn-warning btn-sm  mr-1" to={`/editarcliente/${cli.id}`}>
-                        Editar
+                    <Link className="btn btn-warning btn-sm mx-2" to={`/editarcliente/${cli.id}`}>
+                    <i class="fas fa-edit"></i>
                         </Link>
-                     <Link className="btn btn-danger btn-sm" to={`/eliminareliminar/${cli.id}`}>Eliminar</Link>
+              <Link className="btn btn-danger btn-sm" to={`/eliminareliminar/${cli.id}`}><i class="fas fa-trash-alt"></i></Link>
                           
               </td>
+              
             </tr>
           ))}
         </tbody>

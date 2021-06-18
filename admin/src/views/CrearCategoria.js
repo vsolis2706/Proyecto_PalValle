@@ -45,7 +45,7 @@ function CrearCategoria() {
 
   return (
     <div>
-      <h3 className ="mt-4 text-info">Crear categoriasObtenidas</h3>
+      <h3 className ="mt-4 font-weight-bold text-success">Crear Categoría</h3>
            <hr/>
       <FormCategoria 
         value={value} 

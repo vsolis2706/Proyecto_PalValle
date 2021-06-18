@@ -22,7 +22,7 @@ const ListarCategoria = () => {
 
     return (
         <div>      
-         <h3 className ="mt-4 text-info">Listar Categoria</h3>
+         <h3 className ="mt-4 font-weight-bold text-success">Listar Categoria</h3>
            <hr/>
        
         <Link to="/crearcategoria" className="btn btn-primary btn-md my-2">
@@ -44,12 +44,16 @@ const ListarCategoria = () => {
                     <td> {cat.nombre} </td>
                      <td> {cat.descripcion} </td>
                     <td>
-                    <Link className="btn btn-warning btn-sm  mr-1" to={`/editarcategoria/${cat.id}`}>
-                        Editar
+                    <Link className="btn btn-warning btn-sm  mx-2" to={`/editarcategoria/${cat.id}`}>
+                        <i class="fas fa-edit"></i>
                         </Link>
-                     <Link className="btn btn-danger btn-sm" to={`/eliminarcategoria/${cat.id}`}>Eliminar</Link>
+                    <Link className="btn btn-danger btn-sm" to={`/eliminarcategoria/${cat.id}`}>
+
+                    <i class="fas fa-trash-alt"></i>
+                    </Link>
                           
                     </td>
+                  
                 </tr>
             ) )}
         </tbody>

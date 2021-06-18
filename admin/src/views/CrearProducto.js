@@ -58,7 +58,7 @@ useEffect(() =>{
 }, [])
 return (
     <div>
-        <h3 className ="mt-4 text-info">Crear Producto</h3>
+        <h3 className ="mt-4 font-weight-bold text-success">Crear Producto</h3>
         <hr/>
         <FormProducto value = {value} 
         actualizarInput= {actualizarInput} 

@@ -1,20 +1,21 @@
 import React from 'react'
 import Routes from "./Routes"
 import {BrowserRouter as Router, Switch} from "react-router-dom"
- import Layout from "./components/Layout"
-import NavigationBar from "./components/NavegationBar" 
+import Layout from "./components/Layout"
+import NavigationBar from "./components/NavegationBar"  
+import "./estilos.css";
 function App () {
 return(
   <>
-    <NavigationBar/> 
+ <NavigationBar/> 
    <Layout> 
-
+ 
     <Router>
-      <Switch>
+         <Switch>
         <Routes/>
       </Switch>
     </Router>
-    </Layout> 
+     </Layout>  
 
     </>
   )
