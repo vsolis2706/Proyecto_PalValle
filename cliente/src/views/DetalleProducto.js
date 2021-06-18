@@ -1,9 +1,12 @@
-import {useState, useEffect, Fragment, useContext} from 'react'
+import {useState, useEffect} from 'react'
 import { useParams } from "react-router-dom"
 import { productoId } from "../services/productoService"
+<<<<<<< HEAD
 import {CarritoContext} from "../context/carritoContext"
 import Swal from "sweetalert2"
 import {useHistory} from "react-router-dom"
+=======
+>>>>>>> 1960b60ceabead59cd48ffe5aeab3e795a76f649
 
 
 function DetalleProducto() {

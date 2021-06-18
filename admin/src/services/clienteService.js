@@ -21,6 +21,7 @@ const obtenerClientePorId = async (id) =>{
     }
   }
 
+<<<<<<< HEAD
   const crearCliente = async (nuevoCliente) =>{
     try {
         let headers ={
@@ -66,4 +67,10 @@ export {
     crearCliente,
     editarCliente,
     eliminarCliente
+=======
+
+export {
+    obtenerClientes,
+    obtenerClientePorId
+>>>>>>> 1960b60ceabead59cd48ffe5aeab3e795a76f649
 }

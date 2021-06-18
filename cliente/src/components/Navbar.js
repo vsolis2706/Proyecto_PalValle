@@ -8,6 +8,7 @@ function Navbar() {
   const manejarNavbar = () => setCollapsed(!collapsed)
 
   return (
+<<<<<<< HEAD
     //   <div className="header">
     //   <div className="menu-bar">
     <nav className="navbar navbar-expand-lg navbar-light">
@@ -19,6 +20,18 @@ function Navbar() {
            {/* <img src={Logo} alt="PalValle"/> */}
            <h3>PalValle</h3>
             </Link>
+=======
+      <div className="header">
+      <div className="menu-bar">
+    <nav className="navbar fixed-top navbar-expand-lg navbar-light p-md-3">
+            <div className="container-fluid">
+           {/*      <Link className="nav-logo" to="/PalValle">
+                <img src={Logo} alt="PalValle" width="90" height="80"/>
+                </Link> */}
+            <a className="navbar-brand fw-bold text-white text tituloLogo" href="/PalValle">
+           <h1>PallValle</h1>  
+            </a>
+>>>>>>> 1960b60ceabead59cd48ffe5aeab3e795a76f649
                 <button
                 className="navbar-toggler"
                 type="button"
@@ -39,8 +52,23 @@ function Navbar() {
                     </Link>
                     </li>
                     <li className="nav-item">
+<<<<<<< HEAD
                     <Link className="nav-link" to="/categorias">
                         Categorias
+=======
+                    <Link className="nav-link" to="/">
+                        Categorias
+                    </Link>
+                    </li>
+                    <li className="nav-item">
+                    <Link className="nav-link" to="/">
+                        Categorias
+                    </Link>
+                    </li>
+                    <li className="nav-item">
+                    <Link className="nav-link" to="/carrito">
+                        Ir a Carrito
+>>>>>>> 1960b60ceabead59cd48ffe5aeab3e795a76f649
                     </Link>
                     </li>
                 </ul>

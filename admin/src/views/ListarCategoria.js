@@ -22,7 +22,11 @@ const ListarCategoria = () => {
 
     return (
         <div>      
+<<<<<<< HEAD
          <h3 className ="mt-4 font-weight-bold text-success">Listar Categoria</h3>
+=======
+         <h3 className ="mt-4 text-info">Listar Categoria</h3>
+>>>>>>> 1960b60ceabead59cd48ffe5aeab3e795a76f649
            <hr/>
        
         <Link to="/crearcategoria" className="btn btn-primary btn-md my-2">
@@ -44,6 +48,7 @@ const ListarCategoria = () => {
                     <td> {cat.nombre} </td>
                      <td> {cat.descripcion} </td>
                     <td>
+<<<<<<< HEAD
                     <Link className="btn btn-warning btn-sm  mx-2" to={`/editarcategoria/${cat.id}`}>
                         <i class="fas fa-edit"></i>
                         </Link>
@@ -54,6 +59,14 @@ const ListarCategoria = () => {
                           
                     </td>
                   
+=======
+                    <Link className="btn btn-warning btn-sm  mr-1" to={`/editarcategoria/${cat.id}`}>
+                        Editar
+                        </Link>
+                     <Link className="btn btn-danger btn-sm" to={`/eliminarcategoria/${cat.id}`}>Eliminar</Link>
+                          
+                    </td>
+>>>>>>> 1960b60ceabead59cd48ffe5aeab3e795a76f649
                 </tr>
             ) )}
         </tbody>
@@ -63,4 +76,8 @@ const ListarCategoria = () => {
     )
 }
 
+<<<<<<< HEAD
 export default ListarCategoria
+=======
+export default ListarCategoria
+>>>>>>> 1960b60ceabead59cd48ffe5aeab3e795a76f649

@@ -18,7 +18,11 @@ function ListaClientes() {
     }, [])
     return (
         <div className="mb-3">
+<<<<<<< HEAD
            <h3 className ="mt-4 font-weight-bold text-success">Listar Cliente</h3>
+=======
+           <h3 className ="mt-4 text-info">Listar Clientes</h3>
+>>>>>>> 1960b60ceabead59cd48ffe5aeab3e795a76f649
            <hr/>
            <Link to='/crearCliente' className="btn btn-primary btn-md my-2">
            Crear Cliente
@@ -46,6 +50,7 @@ function ListaClientes() {
               <td>{cli.telefono}</td>
               <td>
              
+<<<<<<< HEAD
                     <Link className="btn btn-warning btn-sm mx-2" to={`/editarcliente/${cli.id}`}>
                     <i class="fas fa-edit"></i>
                         </Link>
@@ -53,6 +58,14 @@ function ListaClientes() {
                           
               </td>
               
+=======
+                    <Link className="btn btn-warning btn-sm  mr-1" to={`/editarcliente/${cli.id}`}>
+                        Editar
+                        </Link>
+                     <Link className="btn btn-danger btn-sm" to={`/eliminareliminar/${cli.id}`}>Eliminar</Link>
+                          
+              </td>
+>>>>>>> 1960b60ceabead59cd48ffe5aeab3e795a76f649
             </tr>
           ))}
         </tbody>

@@ -10,4 +10,8 @@ const Layout = (props) => {
     )
 }
 
+<<<<<<< HEAD
 export default Layout
+=======
+export default Layout
+>>>>>>> 1960b60ceabead59cd48ffe5aeab3e795a76f649

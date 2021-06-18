@@ -13,8 +13,11 @@ import ListaProductos from "./views/ListaProductos"
 import Login from "./components/Login"
 import ListarVentas from "./views/ListarVentas"
  import VerVenta from "./views/VerVenta"
+<<<<<<< HEAD
 import CrearCliente from './views/CrearCliente'
 import EditarCliente from './views/EditarCliente'
+=======
+>>>>>>> 1960b60ceabead59cd48ffe5aeab3e795a76f649
 
 
 //ok
@@ -33,8 +36,11 @@ function Routes() {
          <Route exact path="/crearcategoria" component={CrearCategoria}/>  
          <Route exact path="/editarcategoria/:id" component={EditarCategoria}/>  
          <Route exact path="/ListaClientes" component={ListaClientes}/>   
+<<<<<<< HEAD
          <Route exact path="/crearCliente" component={CrearCliente}/> 
          <Route exact path="/editarcliente/:id" component={EditarCliente}/> 
+=======
+>>>>>>> 1960b60ceabead59cd48ffe5aeab3e795a76f649
          <Route component = {NoMatch} />
         </div>
     )

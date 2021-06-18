@@ -78,7 +78,11 @@ const getProducto = async() =>{
 
     return (
         <div>
+<<<<<<< HEAD
             <h3 className ="mt-4 font-weight-bold text-success">Editar Producto</h3>
+=======
+            <h3 className ="mt-4 text-info">Editar Producto</h3>
+>>>>>>> 1960b60ceabead59cd48ffe5aeab3e795a76f649
            <hr/>
             <FormProducto value ={value}
             setValue={setValue} 
