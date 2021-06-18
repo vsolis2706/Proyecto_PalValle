@@ -65,7 +65,7 @@ function CategoriesCarousel() {
                         <img src={foto4} />
                     </div>
                     <ul className="social-icons">
-                        <li><a href="#"><i className="fa"></i></a></li>
+                        <li><a href="/"><i className="fa"></i></a></li>
                     </ul>
                     <div className="details">
                         <a className="btn btn-success">Comprar</a>
