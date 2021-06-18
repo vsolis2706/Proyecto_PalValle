@@ -23,7 +23,7 @@ function NavigationBar() {
   </Navbar.Collapse>
 
   <Navbar.Collapse className="d-flex justify-content-end"> 
-  <Nav >
+  <Nav>
       <Nav.Link className="text-white font-weight-bold"  href="/Login">Cerrar Sesión</Nav.Link>
        
     </Nav>

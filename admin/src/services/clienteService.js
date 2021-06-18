@@ -53,6 +53,7 @@ const eliminarCliente = async (id) => {
       "Content-Type":"application/json"
     }
     let { data } = await axios.delete(`${URL}/${id}`, {headers})
+    console.log(`${URL}/${id}`)
     return data
   } catch (error) {
     console.log(error)
