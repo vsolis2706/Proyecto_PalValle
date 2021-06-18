@@ -1,10 +1,5 @@
 import React, { useState, useEffect } from 'react'
 import {obtenerFacturacion} from "../services/ventaService"
-<<<<<<< HEAD
-
-=======
-import * as moment from 'moment'
->>>>>>> 1960b60ceabead59cd48ffe5aeab3e795a76f649
 import {Link} from "react-router-dom"
 
 function ListarVentas() {
@@ -31,11 +26,7 @@ function ListarVentas() {
 
     return (
         <div className="m-3">
-<<<<<<< HEAD
            <h3 className ="mt-4 font-weight-bold text-success">Listar Ventas</h3>
-=======
-           <h3 className ="mt-4 text-info">Listar Ventas</h3>
->>>>>>> 1960b60ceabead59cd48ffe5aeab3e795a76f649
            <table className="table">
             <thead>
                     <tr>
@@ -56,20 +47,12 @@ function ListarVentas() {
               <td>{vent.precio_total}</td>
               <td>{vent.estado}</td>
               <td>
-<<<<<<< HEAD
                 <Link className="btn btn-info btn-sm mx-2" to={`/detalleventa/${vent.id}`}>
                 <i class="far fa-eye"></i>
                 </Link> 
                
                 <Link  className="btn btn-danger btn-sm" to={`/anularventa/${vent.id}`}>
                 <i class="fas fa-ban"></i>
-=======
-                <Link className="btn btn-info btn-sm mr-2" to={`/detalleventa/${vent.id}`}>
-                  Ver detalle
-                </Link>
-                <Link className="btn btn-danger btn-sm" to={`/anularventa/${vent.id}`}>
-                  Anular
->>>>>>> 1960b60ceabead59cd48ffe5aeab3e795a76f649
                 </Link>
               </td>
             </tr>
@@ -81,8 +64,4 @@ function ListarVentas() {
     )
 }
 
-<<<<<<< HEAD
 export default ListarVentas
-=======
-export default ListarVentas
->>>>>>> 1960b60ceabead59cd48ffe5aeab3e795a76f649

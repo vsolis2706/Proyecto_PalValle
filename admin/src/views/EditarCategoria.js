@@ -61,11 +61,7 @@ function EditarCategoria() {
 
     return (
     <div>
-<<<<<<< HEAD
      <h3 className ="mt-4 font-weight-bold text-success">Editar Categoria</h3>
-=======
-     <h3 className ="mt-4 text-info">Editar Categoria</h3>
->>>>>>> 1960b60ceabead59cd48ffe5aeab3e795a76f649
            <hr/>
       <FormCategoria 
         value={value} 
@@ -79,8 +75,4 @@ function EditarCategoria() {
 
 
 
-<<<<<<< HEAD
 export default EditarCategoria
-=======
-export default EditarCategoria
->>>>>>> 1960b60ceabead59cd48ffe5aeab3e795a76f649

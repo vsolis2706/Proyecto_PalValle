@@ -1,24 +1,16 @@
 import React from 'react'
-<<<<<<< HEAD
 /* import {Jumbotron, Container} from "react-bootstrap" */
 
 
 function Home() {
     return (
       /*   <Jumbotron fluid>
-=======
-import {Jumbotron, Container} from "react-bootstrap"
-function Home() {
-    return (
-        <Jumbotron fluid>
->>>>>>> 1960b60ceabead59cd48ffe5aeab3e795a76f649
         <Container>
           <h1>Bienvenidos</h1>
           <p>
           PALVALLE
           </p>
         </Container>
-<<<<<<< HEAD
       </Jumbotron> */
 
       <div className="jumbotron jumbotron-fluid m-5">
@@ -31,10 +23,3 @@ function Home() {
 }
 
 export default Home
-=======
-      </Jumbotron>
-    )
-}
-
-export default Home
->>>>>>> 1960b60ceabead59cd48ffe5aeab3e795a76f649

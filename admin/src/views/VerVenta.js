@@ -80,11 +80,7 @@ function VerVenta() {
 
     return (
         <div className="mb-3">
-<<<<<<< HEAD
              <h3 className ="mt-4 font-weight-bold text-success">Información Venta</h3>
-=======
-             <h3 className ="mt-4 text-info">Información Venta</h3>
->>>>>>> 1960b60ceabead59cd48ffe5aeab3e795a76f649
            <hr/>
             <FormVenta
                 value={value}
@@ -92,11 +88,7 @@ function VerVenta() {
                 actualizarInput = {actualizarInput}
                 cliente={cliente}
             />
-<<<<<<< HEAD
             <h3 className ="mt-4 font-weight-bold text-success">Detalle Venta</h3>
-=======
-            <h3 className ="mt-4 text-info">Detalle Venta</h3>
->>>>>>> 1960b60ceabead59cd48ffe5aeab3e795a76f649
            <FormDetalleVenta
                detalle ={detalle}
               
@@ -105,8 +97,4 @@ function VerVenta() {
     )
 }
 
-<<<<<<< HEAD
 export default VerVenta
-=======
-export default VerVenta
->>>>>>> 1960b60ceabead59cd48ffe5aeab3e795a76f649

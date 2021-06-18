@@ -19,7 +19,7 @@ function ListaClientes() {
 
     const eliminar=(id) =>{
       Swal.fire({
-        icon:'success',
+        icon:'warning',
         title:'¿usted desea eliminar?',
         showConfirmButton:true,
         showDenyButton:true,
@@ -27,7 +27,6 @@ function ListaClientes() {
         denyButtonText:'no'
       }).then((resultado)=>{
         if(resultado.isConfirmed){
-
            eliminarCliente(id)
           history.push("/ListaClientes")
         }else if(resultado.isDenied){
@@ -40,11 +39,7 @@ function ListaClientes() {
     }, [])
     return (
         <div className="mb-3">
-<<<<<<< HEAD
            <h3 className ="mt-4 font-weight-bold text-success">Listar Cliente</h3>
-=======
-           <h3 className ="mt-4 text-info">Listar Clientes</h3>
->>>>>>> 1960b60ceabead59cd48ffe5aeab3e795a76f649
            <hr/>
            <Link to='/crearCliente' className="btn btn-primary btn-md my-2">
            Crear Cliente
@@ -71,27 +66,15 @@ function ListaClientes() {
               <td>{cli.dni}</td>
               <td>{cli.telefono}</td>
               <td>
-             
-<<<<<<< Updated upstream
-<<<<<<< HEAD
-                    <Link className="btn btn-warning btn-sm mx-2" to={`/editarcliente/${cli.id}`}>
-=======
                     <Link className="btn btn-warning btn-sm" to={`/editarcliente/${cli.id}`}>
->>>>>>> Stashed changes
+
                     <i class="fas fa-edit"></i>
                         </Link>
               <Link className="btn btn-danger btn-sm" to="" onClick={() => eliminar(cli.id)}><i class="fas fa-trash-alt"></i></Link>
                           
               </td>
-              
-=======
-                    <Link className="btn btn-warning btn-sm  mr-1" to={`/editarcliente/${cli.id}`}>
-                        Editar
-                        </Link>
-                     <Link className="btn btn-danger btn-sm" to={`/eliminareliminar/${cli.id}`}>Eliminar</Link>
-                          
-              </td>
->>>>>>> 1960b60ceabead59cd48ffe5aeab3e795a76f649
+            
+
             </tr>
           ))}
         </tbody>

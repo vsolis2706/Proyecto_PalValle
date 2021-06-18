@@ -12,7 +12,7 @@ function NavigationBar() {
   <Navbar.Collapse id="responsive-navbar-nav">
     <Nav className="mr-auto">
       <Nav.Link href="/ListarVentas" className="text-white font-weight-bold">Ventas</Nav.Link>
-      <Nav.Link className="text-white font-weight-bold" href="#features">Reporte</Nav.Link>
+ {/*      <Nav.Link className="text-white font-weight-bold" href="#features">Reporte</Nav.Link> */}
       <NavDropdown title="Mantenimiento"  id="collasible-nav-dropdown">
         <NavDropdown.Item  href="/ListaProductos">Productos</NavDropdown.Item>
         <NavDropdown.Item  href="/ListarCategoria">Categoria</NavDropdown.Item>

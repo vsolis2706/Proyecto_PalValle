@@ -1,11 +1,20 @@
 import React from 'react'
 
 function login() {
-  
+  const manejarSubmit = async (e) => {
+    e.preventDefault()
+ 
+    try {
+    console.log("hola login")
+     
+    } catch (error) {
+    
+    }
+  }
     return (
       
     <div className="col d-flex justify-content-center mt-5">
-        <form>
+        <form onSubmit={(e) => {manejarSubmit(e)}}>
           <h3 className="mb-3 text-center">PallValle</h3>
 
           <div className="form-group">
@@ -24,8 +33,4 @@ function login() {
     )
 }
 
-<<<<<<< HEAD
 export default login
-=======
-export default login
->>>>>>> 1960b60ceabead59cd48ffe5aeab3e795a76f649
