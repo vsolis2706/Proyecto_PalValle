@@ -1,12 +1,35 @@
-import {useState, useEffect} from 'react'
+import {useState, useEffect, Fragment, useContext} from 'react'
 import { useParams } from "react-router-dom"
 import { productoId } from "../services/productoService"
+import {CarritoContext} from "../context/carritoContext"
+import Swal from "sweetalert2"
+import {useHistory} from "react-router-dom"
 
 
 function DetalleProducto() {
     const [producto, setProducto] = useState({})
 
     let {id} = useParams()
+    let {anadirProducto} = useContext(CarritoContext)
+    let history = useHistory()
+
+    const anadirProductoACarrito = () => {
+      anadirProducto({...producto})
+      Swal.fire({
+        icon:'success',
+        title:'Producto Añadido!',
+        showConfirmButton:true,
+        showDenyButton:true,
+        confirmButtonText:'Seguir Comprando',
+        denyButtonText:'Ir al carrito'
+      }).then((resultado)=>{
+        if(resultado.isConfirmed){
+          history.push('/')
+        }else if(resultado.isDenied){
+          history.push('/carrito')
+        }
+      })
+    }
 
     const getProducto = async () => {
         try {

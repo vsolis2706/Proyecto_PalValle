@@ -2,8 +2,9 @@ import {useState, useEffect} from 'react'
 import {obtenerProductos} from "../services/productoService"
 import Productos from '../components/Productos'
 import Header from "../components/Header"
-import Cards from '../components/Cards'
+// import Cards from '../components/Cards'
 import CategoriesCarousel from '../components/CategoriesCarousel'
+import GroupCategories from '../components/GroupCategories'
 
 
 function InicioPalValle() {
@@ -34,6 +35,7 @@ function InicioPalValle() {
         <div classNameName="row">
             <div classNameName="col-md-6 mb-3">
         <br/>
+        <GroupCategories/>
             <div classNameName="form-check">
               <label classNameName="form-check-label" for="flexCheckDefault">
                   istema Digestivo
