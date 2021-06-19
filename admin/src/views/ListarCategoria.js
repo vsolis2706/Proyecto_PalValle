@@ -50,6 +50,7 @@ const ListarCategoria = () => {
                     <Link className="btn btn-danger btn-sm" to={`/eliminarcategoria/${cat.id}`}>
 
                     <i class="fas fa-trash-alt"></i>
+                    
                     </Link>
                           
                     </td>
