@@ -4,7 +4,7 @@ import Productos from '../components/Productos'
 import Header from "../components/Header"
 // import Cards from '../components/Cards'
 import CategoriesCarousel from '../components/CategoriesCarousel'
-import GroupCategories from '../components/GroupCategories'
+/* import GroupCategories from '../components/GroupCategories' */
 
 
 function InicioPalValle() {
@@ -23,35 +23,45 @@ function InicioPalValle() {
     return (
         <div>
          <Header />
-         <div classNameName="mt-5">
-            <h1 classNameName="text-center fw-bold">Los más vendidos</h1>
-         </div>
-         {/* <Cards/> */}
-          <CategoriesCarousel/>
-          <br/>
-          <div classNameName="mt-5">
-            <h1 classNameName="text-center fw-bold">CATEGORÍAS</h1>
-         </div>
-        <div classNameName="row">
-            <div classNameName="col-md-6 mb-3">
-        <br/>
-        <GroupCategories/>
-            <div classNameName="form-check">
-              <label classNameName="form-check-label" for="flexCheckDefault">
-                  istema Digestivo
-              </label>
-              <input classNameName="form-check-input" type="checkbox"  id="flexCheckDefault" />
-
-            </div>
+      
+        <div className="container">
+          <div className="row">
+          <div classNameName="col-12 col-md-12">
+            <h1 className="text-center text-success fw-bold m-5">MÁS VENDIDOS</h1>
           </div>
+        </div>
+        <div className="row">
+          <div classNameName="col-12 col-md-12">
+            {/* <Cards/> */}
+          <CategoriesCarousel/>
+          </div>
+        </div>
+        <div className="row m-5">
+          <div classNameName="col-12 col-md-12">
+            <h1 className="text-center text-success fw-bold m-5">CATEGORÍA</h1>
+            <p className="lead text-center">PalValle, empresa peruana, que ofrece la venta de productos naturales en diferentes marcas para el consumo de la familia, pensando en una alimentación saludable y balanceada.</p>
+          
+          </div>
+        </div>
+       {/*   <div className="row">*/}
+        {/* <div classNameName="col-md-6 mb-3"> */}
+          {/*  lo comente porque sale error */}
+        {/*  <GroupCategories/>  */}
+          
+        {/* </div>  */} 
+        {/* </div>  */} 
+       
+        <div className="row">
         <div classNameName="col-md-6 mb-3">
-        <Productos productos={productos} categoria="Sistema Digestivo" id_categoria="1"/>
-            <Productos productos={productos} categoria="Sistema Nervioso" id_categoria="2"/> 
+        <Productos productos={productos} categoria="Bebidas" id_categoria="1"/>
+        <Productos productos={productos} categoria="Lacteos" id_categoria="2"/> 
+        <Productos productos={productos} categoria="Frutas" id_categoria="3"/> 
+        <Productos productos={productos} categoria="Abarrotes" id_categoria="4"/> 
+          
+          </div>
+        </div>
         </div>
 
-        </div>
-
-            
         </div>
     )
 }

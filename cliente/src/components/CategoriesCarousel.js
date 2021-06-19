@@ -23,52 +23,52 @@ function CategoriesCarousel() {
             <div className="card-wrapper">
                 <div className="card">
                     <div className="card-image">
-                        <img src={foto1} />
-                    </div>
-                    <ul className="social-icons">
-                        <li><a href="#"><i className="fa"></i></a></li>
-                    </ul>
-                    <div className="details">
-                        <a className="btn btn-success">Comprar</a>
-                    </div>
-                </div>
-            </div>
-            <div className="card-wrapper">
-                <div className="card">
-                    <div className="card-image">
-                        <img src={foto2} />
-                    </div>
-                    <ul className="social-icons">
-                        <li><a href="#"><i className="fa"></i></a></li>
-                    </ul>
-                    <div className="details">
-                        <a className="btn btn-success">Comprar</a>
-                    </div>
-                </div>
-            </div>
-            <div className="card-wrapper">
-                <div className="card">
-                    <div className="card-image">
-                        <img src={foto3} />
-                    </div>
-                    <ul className="social-icons">
-                        <li><a href="#"><i className="fa"></i></a></li>
-                    </ul>
-                    <div className="details">
-                        <a className="btn btn-success">Comprar</a>
-                    </div>
-                </div>
-            </div>
-            <div className="card-wrapper">
-                <div className="card">
-                    <div className="card-image">
-                        <img src={foto4} />
+                        <img src={foto1}  alt="..."/>
                     </div>
                     <ul className="social-icons">
                         <li><a href="/"><i className="fa"></i></a></li>
                     </ul>
                     <div className="details">
-                        <a className="btn btn-success">Comprar</a>
+                        <a className="btn btn-success" href="/">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div className="card-wrapper">
+                <div className="card">
+                    <div className="card-image">
+                        <img src={foto2} alt="..."/>
+                    </div>
+                    <ul className="social-icons">
+                        <li><a href="/"><i className="fa"></i></a></li>
+                    </ul>
+                    <div className="details">
+                        <a className="btn btn-success" href="/">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div className="card-wrapper">
+                <div className="card">
+                    <div className="card-image">
+                        <img src={foto3} alt="..." />
+                    </div>
+                    <ul className="social-icons">
+                        <li><a href="/"><i className="fa"></i></a></li>
+                    </ul>
+                    <div className="details">
+                        <a className="btn btn-success" href="/">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div className="card-wrapper">
+                <div className="card">
+                    <div className="card-image">
+                        <img src={foto4} alt="..."/>
+                    </div>
+                    <ul className="social-icons">
+                        <li><a href="/"><i className="fa"></i></a></li>
+                    </ul>
+                    <div className="details">
+                        <a className="btn btn-success" href="/">Comprar</a>
                     </div>
                 </div>
             </div>

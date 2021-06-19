@@ -3,9 +3,14 @@ import { withStyles } from '@material-ui/core/styles';
 import { green } from '@material-ui/core/colors';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import Checkbox from '@material-ui/core/Checkbox';
-import { Link } from "react-router-dom";
 
-function GroupCategories({ productos, categoria, id_categoria, mostrarFiltro, setProductos}) {
+
+function GroupCategories({ 
+  productos, 
+  categoria, 
+  id_categoria, 
+  mostrarFiltro, 
+  setProductos}) {
 
     const [checkboxFiltro, setCheckboxFiltro] = useState(false);
     const [filtroNombre, setFiltroNombre] = useState("")

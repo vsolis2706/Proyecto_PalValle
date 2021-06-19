@@ -1,11 +1,21 @@
+
 .navbar{
+  font-family: 'Pacifico', cursive;
     background-image: linear-gradient(-90deg, rgb(22, 228, 22), rgb(0, 53, 0));
 }
 .nav-link {
-    font-size: 16px;
+    font-size: 22px;
     margin: 3px;
     font-weight: 500;
+    color:white !important;
+    font-family: 'Signika', sans-serif;
 }
+
+.nombre_logo{
+  font-family: 'Pacifico', cursive;
+  font-size: 36px;
+}
+
 .navbar-nav{
     text-align: right;
     margin-right: 20px;
@@ -17,7 +27,8 @@
 }
 .nav-link:hover{
     font-weight: 700;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid white;
+    
 }
 .navbar-brand img{
     width: 150px;
@@ -35,6 +46,7 @@
 }
 * {
     font-family: "Spartan", sans-serif;
+   
   }
   .card:hover{
       box-shadow: 2px 2px 2px 2px gainsboro;

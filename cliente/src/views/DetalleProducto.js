@@ -1,4 +1,4 @@
-import {useState, useEffect} from 'react'
+import {useState, useEffect, useContext} from 'react'
 import { useParams } from "react-router-dom"
 import { productoId } from "../services/productoService"
 import {CarritoContext} from "../context/carritoContext"
@@ -24,7 +24,7 @@ function DetalleProducto() {
         denyButtonText:'Ir al carrito'
       }).then((resultado)=>{
         if(resultado.isConfirmed){
-          history.push('/')
+          history.push('/PalValle')
         }else if(resultado.isDenied){
           history.push('/carrito')
         }
@@ -46,6 +46,7 @@ function DetalleProducto() {
 
     return (
         <div>
+        
           <div className="titulo-detalle">
             <div className="container p-4 text-center">
               <h2 className="fw-bold">{producto.nombre}</h2>
@@ -55,7 +56,7 @@ function DetalleProducto() {
             <div className="row">
               <div className="col-12 col-md-6">
                 <img
-                  src={producto.fotos[0]}
+                  src={producto.fotos}
                   alt={`foto de ${producto.nombre}`}
                   className="img-fluid"
                 />
@@ -68,7 +69,7 @@ function DetalleProducto() {
                     <span className="fw-bold" style={{ fontSize: "32px" }}>
                         S/ {producto.precio}
                     </span>
-                    <button className="btn btn-dark btn-lg">
+                    <button className="btn btn-dark btn-lg"   onClick = {anadirProductoACarrito}>
                         Añadir a Carrito
                     </button>
                 </div>

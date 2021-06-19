@@ -17,7 +17,7 @@ function Navbar() {
                 </Link> */}
             <Link className="navbar-brand text-white fw-bold" to="/PalValle">
            {/* <img src={Logo} alt="PalValle"/> */}
-           <h3>PalValle</h3>
+           <h3 className="nombre_logo">PalValle</h3>
             </Link>
                 <button
                 className="navbar-toggler"
@@ -34,7 +34,7 @@ function Navbar() {
                 <div className={`${collapsed ? 'collapse' : ''} navbar-collapse`} id="navbarNav">
                 <ul className="navbar-nav me-2 mx-auto">
                     <li className="nav-item">
-                    <Link className="nav-link" to="/detalleproducto">
+                    <Link className="nav-link" to="/detalle">
                         Productos
                     </Link>
                     </li>

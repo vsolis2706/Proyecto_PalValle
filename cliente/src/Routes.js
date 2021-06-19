@@ -8,7 +8,7 @@ function Routes() {
     return (
         <div>
            <Route path="/PalValle" exact component={InicioPalValle}/>
-           <Route path="/detalleproducto/:id" component={DetalleProducto}/>
+           <Route path="/detalle/:id" component={DetalleProducto}/>
            <Route path="/carrito" exact component={CarritoDeCompra} />
            <Route path='/compra' exact component={Compra} />
         </div>
