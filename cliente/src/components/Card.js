@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import foto01 from '../assets/foto01.jpg'
 
+
 function Card({title, imageSource}) {
     return (
         <div className="card text-center">
