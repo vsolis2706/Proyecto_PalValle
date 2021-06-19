@@ -67,7 +67,7 @@ function ListaClientes() {
               <td>{cli.telefono}</td>
               <td>
                     <Link className="btn btn-warning btn-sm" to={`/editarcliente/${cli.id}`}>
-
+{/* se agrego */}
                     <i class="fas fa-edit"></i>
                         </Link>
               <Link className="btn btn-danger btn-sm" to="" onClick={() => eliminar(cli.id)}><i class="fas fa-trash-alt"></i></Link>
