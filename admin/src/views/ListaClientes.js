@@ -60,8 +60,8 @@ function ListaClientes() {
           {clientes.map((cli, i) => (
             <tr key={i}>
               <td>{i + 1}</td>
-              <td>{cli.Apellidos}</td>
-              <td>{cli.Nombres}</td>
+              <td>{cli.apellidos}</td>
+              <td>{cli.nombre}</td>
               <td>{cli.email}</td>
               <td>{cli.dni}</td>
               <td>{cli.telefono}</td>

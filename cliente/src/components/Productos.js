@@ -2,8 +2,8 @@ import React from 'react'
 import {Link} from "react-router-dom"
 
 function Productos({ productos, categoria, id_categoria }) {
- /*  console.log(id_categoria)
- */
+   console.log(productos)
+ 
   /* console.log(productos.fotos) */
     return (
         <div className="container">
@@ -13,7 +13,7 @@ function Productos({ productos, categoria, id_categoria }) {
       <div className="row">
         {productos
           .filter((prod) => {
-            return prod.id_categoria == id_categoria;
+            return prod.CategoriaId == id_categoria;
           })
         .map((prod, i) => (
 
@@ -23,7 +23,7 @@ function Productos({ productos, categoria, id_categoria }) {
                 to={`/detalle/${prod.id}`} 
                 style={{textDecoration:'none', color:'black'}}
               >
-                <img className="card-img-top" src={prod.fotos[0]} alt="" />
+                <img className="card-img-top" src={prod.foto} alt="" />
                 <div className="card-body">
                   <h6 className="card-title">{prod.nombre}</h6>
                   <span className="fw-bold">S/ {prod.precio}</span>

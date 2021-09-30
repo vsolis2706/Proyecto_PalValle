@@ -1,6 +1,6 @@
 import axios from "axios"
 
-const URL = `${process.env.REACT_APP_URL_API_2}/Facturacion`
+const URL = `${process.env.REACT_APP_URL_API_1}/Facturacion`
 
 const crearCabecera = async (nuevo) =>{
     try {

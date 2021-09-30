@@ -56,7 +56,7 @@ function DetalleProducto() {
             <div className="row">
               <div className="col-12 col-md-6">
                 <img
-                  src={producto.fotos}
+                  src={producto.foto}
                   alt={`foto de ${producto.nombre}`}
                   className="img-fluid"
                 />

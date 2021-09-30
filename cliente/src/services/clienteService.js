@@ -5,7 +5,7 @@ const URL = `${process.env.REACT_APP_URL_API_1}/Cliente`
 const obtenerClientePorId = async (id) =>{
     try {
       
-      let {data} = await axios.get( `${URL}/${id}`)
+      let {data} = await axios.get(`${URL}/${id}`)
       return data
     } catch (error) {
       throw error
@@ -15,7 +15,7 @@ const obtenerClientePorId = async (id) =>{
   const obtenerClientePorDNI = async (dni) =>{
     try {
       
-      let {data} = await axios.get(`${URL}/?dni=${dni}`)
+      let {data} = await axios.get(`${URL}/nrodoc/${dni}`)
       return data
     } catch (error) {
       throw error

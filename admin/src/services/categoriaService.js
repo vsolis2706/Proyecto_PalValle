@@ -1,12 +1,14 @@
 import axios from "axios"
 
-const URL = `${process.env.REACT_APP_URL_API_1}/Categoria`
+const URL = `${process.env.REACT_APP_URL_API_1}/Categorias`
 
 
 const crearCategoria = async (nuevaCategoria) =>{
     try {
         let headers ={
+             
             "Content-Type" : "application/json"
+          
         }
         let {data} = await axios.post(URL, nuevaCategoria, {headers})
         return data
@@ -19,7 +21,7 @@ const crearCategoria = async (nuevaCategoria) =>{
 const obtenerCategorias  = async () =>{
     try {
         let {data} = await axios.get(URL)
-     
+    
         return data
     } catch (error) {
       throw error  
@@ -38,13 +40,13 @@ const obtenerCategorias  = async () =>{
   }
 
   const editarCategoria = async (categoriaEditado) =>{
-    
+    console.log(`${URL}/${categoriaEditado}`)
     try {
       let  headers ={
         "Content-Type":"application/json"
       }
 
-      console.log(categoriaEditado)
+     
       let { data } = await axios.put(`${URL}/${categoriaEditado.id}`, categoriaEditado, {headers})
       return data
     } catch (error) {

@@ -1,6 +1,7 @@
 import React from "react";
 
 function FormCategoria({
+    
   value, 
   actualizarInput,
   setValue, 

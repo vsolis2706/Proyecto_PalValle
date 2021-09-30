@@ -10,10 +10,11 @@ import CategoriesCarousel from '../components/CategoriesCarousel'
 function InicioPalValle() {
     
   const [productos, setProductos] = useState ([])
+  console.log("Inicio pal vale")
     const getProductos = async () => {
         let productosObtenidos = await obtenerProductos()
         setProductos(productosObtenidos)
-        
+      
       }
     
       useEffect(()=>{

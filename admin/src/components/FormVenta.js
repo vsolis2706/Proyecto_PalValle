@@ -25,9 +25,9 @@ function FormVenta({
                         Fecha
                     </label>
                     <input 
-                        type="date" 
+                        type="text" 
                         className="form-control" 
-                        value={value.fecha} 
+                        value={new Date(value.fecha).toLocaleDateString('en-GB')} 
                         onChange={(e)=>{actualizarInput(e)}} 
                         />
             </div>
@@ -42,7 +42,7 @@ function FormVenta({
                     <input 
                         type="text" 
                         className="form-control" 
-                        value={`${cliente.Apellidos} , ${cliente.Nombres}`}
+                        value={`${cliente.apellidos} , ${cliente.nombre}`}
                         onChange={(e)=>{actualizarInput(e)}} 
                         />
             </div>

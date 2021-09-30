@@ -81,9 +81,11 @@ function FormProducto({
             multiple
           />
           <ul className="list-group">
-              {value.fotos.map((fotito, i) => (
+          <li className="list-group-item">{value.foto}</li>
+
+             {/*  {value.foto.map((fotito, i) => (
                 <li className="list-group-item" key={i}>{fotito}</li>
-              ))}
+              ))} */}
           </ul>
         </div>
         <div>

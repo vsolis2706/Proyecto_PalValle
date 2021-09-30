@@ -46,9 +46,7 @@ function EditarCategoria() {
 
    const getCategoria = async () => {
     try {
-        console.log("estoy en getcateria")
       let categoriaObtenido = await obtenerCategoriaPorId(id)
-   
       setValue({...categoriaObtenido})
     } catch (error) {
       console.log(error)

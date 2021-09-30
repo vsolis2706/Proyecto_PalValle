@@ -43,11 +43,11 @@ const history = useHistory()
         if(clienteObtenido[0] === undefined){
            clienteObtenido = await crearCliente(datos)
         }
-      
+      console.log(clienteObtenido)
   
         facturacion.id_cliente = clienteObtenido.id
         let facturacreada =  await crearCabecera(facturacion) 
-      
+        console.log(facturacreada)
   
   for (let i = 0; i < carrito.length; i++) {
     console.log(carrito[i]);
@@ -57,7 +57,7 @@ const history = useHistory()
     detallefacturacion.precio =  carrito[i].precio
     
     let detallefacCrea =  await crearDetalle(detallefacturacion) 
-  
+    
   }
   Swal.fire({
     icon:'success',
@@ -130,7 +130,7 @@ const history = useHistory()
                 type="text"
                 className="form-control"
                 placeholder="Ej. Juan"
-                {...register("Nombres", { required: true })}
+                {...register("nombre", { required: true })}
               />
               {errors.nombre && (
                 <span className="text-danger">Este campo es obligatorio</span>
@@ -142,7 +142,7 @@ const history = useHistory()
                 type="text"
                 className="form-control"
                 placeholder="Ej. Chavez"
-                {...register("Apellidos", { required: true })}
+                {...register("apellidos", { required: true })}
               />
               {errors.nombre && (
                 <span className="text-danger">Este campo es obligatorio</span>
@@ -194,58 +194,15 @@ const history = useHistory()
             </div>
 
             <div className="mb-2">
-              <label className="form-label">Distrito</label>
+              <label className="form-label">Dirección</label>
               <input
                 type="text"
                 className="form-control"
                 placeholder="Ej. Santa Anita"
-                {...register("distrito", { pattern: /^[A-Za-z]/i })}
+                {...register("direccion", { pattern: /^[A-Za-z]/i })}
               />
               {errors.ciudad && (
                 <span className="text-danger">Solamente Letras</span>
-              )}
-            </div>
-           
-            <div className="mb-2">
-              <label className="form-label">Nro Tarjeta</label>
-              <input
-                type="text"
-                className="form-control"
-                placeholder="01234567"
-                {...register("nro_tarjeta", { minLength: 8 })}
-              />
-              {errors.numero && (
-                <span className="text-danger">
-                  Min 8 dígitos
-                </span>
-              )}
-            </div>
-            <div className="mb-2">
-              <label className="form-label">Fecha Vencimiento</label>
-              <input
-                type="date"
-                className="form-control"
-                placeholder="dd/mm/yyyy"
-                {...register("fecha_vencimiento", { minLength: 10 })}
-              />
-              {errors.numero && (
-                <span className="text-danger">
-                  Min 10 dígitos
-                </span>
-              )}
-            </div>
-            <div className="mb-2">
-              <label className="form-label">Código seguridad</label>
-              <input
-                type="text"
-                className="form-control"
-                placeholder="123"
-                {...register("cod_seguridad", { minLength: 3 })}
-              />
-              {errors.numero && (
-                <span className="text-danger">
-                  Min 3 dígitos
-                </span>
               )}
             </div>
             <button type="submit" className="btn btn-success">

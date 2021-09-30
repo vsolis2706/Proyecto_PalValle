@@ -6,7 +6,8 @@ const CarritoContextProvider = (props) =>{
     const [carrito, setCarrito] = useState([])
 
     const anadirProducto = (producto) =>{
-    
+        console.log("estoy en carrito")
+    console.log(producto)
         for (let i = 0; i < carrito.length; i++) {
           if(carrito[i].id === producto.id){
                 let productoExistente = {

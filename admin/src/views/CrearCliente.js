@@ -5,8 +5,8 @@ import Swal from "sweetalert2"
 import {useHistory} from "react-router-dom"
 function CrearCliente() {
     const [value, setValue] = useState({
-        Nombres:'',
-        Apellidos:'',
+        nombre:'',
+        apellidos:'',
         email:'',
         dni:0,
         telefono:0,

@@ -8,8 +8,8 @@ import {useHistory} from "react-router-dom"
 function EditarCliente() {
     let {id} = useParams();
     const [value, setValue] = useState({
-        Nombres:'',
-        Apellidos:'',
+        nombre:'',
+        apellidos:'',
         email:'',
         dni:0,
         telefono:0,
